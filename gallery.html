@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+    <script>
+        function switchImage() {
+            const img1 = document.getElementById("im1");
+            const img2 = document.getElementById("im2");
+            const tempSrc = img1.src;
+            img1.src = img2.src;
+            img2.src = tempSrc;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    <div class="container">
+        <h1>My Gallery</h1>
+        <div class="image-container">
+            <img id="im1" src="porsche1.jpg" alt="Image 1" width="470">
+            <img id="im2" src="porsche2.jpg" alt="Image 2" width="470">
+        </div>
+        <button onclick="switchImage()">Switch Image</button>
+    </div>
+</body>
+</html>
