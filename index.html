@@ -4,36 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            transition: background-color 0.5s;
-            margin: 0;
-            padding: 0;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            padding: 20px;
-        }
-    </style>
-    <script>
-        function changeBackgroundColor() {
-            const color = document.getElementById("colorSelect").value;
-            document.body.style.backgroundColor = color;
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -42,7 +14,7 @@
         <a href="gallery.html">Gallery</a>
     </nav>
     <div class="container">
-        <h1>Welcome to My Portfolio!</h1>
+        <h1>Welcome to Inder Sran's Portfolio!</h1>
         <p>This site showcases my work and provides information about me and my projects.</p>
         <label for="colorSelect">Choose Background Color:</label>
         <select id="colorSelect" onchange="changeBackgroundColor()">
